@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ems.json_schema_validation.RestAssuredJsonSchemaValidation">
+      <class name="com.ems.json_schema_validation.HamcrestMatcherJsonSchemaValidation">
         <methods>
-          <include name="validationUsingMatchesJsonSchema"/>
+          <include name="validate"/>
         </methods>
-      </class> <!-- com.ems.json_schema_validation.RestAssuredJsonSchemaValidation -->
+      </class> <!-- com.ems.json_schema_validation.HamcrestMatcherJsonSchemaValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

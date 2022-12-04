@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 
 public class Serialization {
+	
+	//data is obtained  //add json simple or jackson databind
 
 	@Test
 	public void serialization() {

@@ -26,14 +26,14 @@ public class RestAssuredJsonSchemaValidation {
 		.when()
 		.post("/employees")
 		.then()
-		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema.json"));
+		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema.json"));//if schema is in the resource use classpath
 	}
 
-	@Test
+	@Test 
 	public void validationUsingMatchesJsonSchema() throws FileNotFoundException {
 		File inputJson = new File("src/test/resources/input.json");
 
-		InputStream inputSchema = new FileInputStream("src/test/resources/schema.json");
+		InputStream inputSchema = new FileInputStream("src/test/resources/schema.json"); //Assume the schemafile is not in resource
 
 		RestAssured
 		.given()

@@ -21,12 +21,16 @@
           "type": "string"
         }
       ]
+    },
+    "id": {
+      "type": "integer"
     }
   },
   "required": [
     "firstName",
     "lastName",
     "email",
-    "skills"
+    "skills",
+    "id"
   ]
 }
